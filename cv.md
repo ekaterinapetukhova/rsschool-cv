@@ -48,3 +48,75 @@ faculty of computer science
 
 *nov 2023 — now*
 
+## 🚀 skills & tools
+
+* html
+
+* css
+
+* scss
+
+* javacsript
+
+* git
+
+* figma
+
+* gulp
+
+## ⌨️ code example
+
+[Base Conversion](https://www.codewars.com/kata/526a569ca578d7e6e300034e): *In this kata you have to implement a base converter, which converts positive integers between arbitrary bases / alphabets. Here are some pre-defined alphabets:*
+```
+var Alphabet = {
+  BINARY:        '01',
+  OCTAL:         '01234567',
+  DECIMAL:       '0123456789',
+  HEXA_DECIMAL:  '0123456789abcdef',
+  ALPHA_LOWER:   'abcdefghijklmnopqrstuvwxyz',
+  ALPHA_UPPER:   'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+  ALPHA:         'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ',
+  ALPHA_NUMERIC: '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+};
+```
+*The function convert() should take an input (string), the source alphabet (string) and the target alphabet (string). You can assume that the input value always consists of characters from the source alphabet. You don't need to validate it.*
+
+```javascript
+function convert(input, source, target) {
+  const arr = input.split('');
+  let convToTarg = [];
+  
+  let convToDec = arr.reduce((acc, item, index) => {
+    acc += source.indexOf(item) * Math.pow(source.length, arr.length - 1 - index);
+    return acc;
+  }, 0);
+  
+  if (convToDec === 0) {
+    convToTarg.push(convToDec);
+  } else {
+    while (convToDec !== 0) {
+    convToTarg.push(convToDec % target.length);
+    convToDec = Math.floor(convToDec / target.length);
+   }
+  }
+  
+  return convToTarg.reverse().map((item) => target.charAt(item)).join('');
+}
+```
+
+## 🖥️ works examples
+
+[audio player on pure javascript](https://rolling-scopes-school.github.io/ekaterinapetukhova-JSFEPRESCHOOL2023Q2/js30-1-2-audio-player/)
+
+[gallery with unplash api](https://rolling-scopes-school.github.io/ekaterinapetukhova-JSFEPRESCHOOL2023Q2/js30-2-2-image-galery/)
+
+[takeaway&delivery landing](https://ekaterinapetukhova.github.io/takeaway-and-delivery-landing/)
+
+## 🌍 languages
+
+* russian - *native (c2)*
+
+* english - *intermediate (b1)*
+
+* polish - *intermediate (b1)*
+
