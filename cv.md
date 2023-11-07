@@ -15,3 +15,36 @@ i am a student of computer science faculty and i am starting my journey in the i
 **[linkedin](https://www.linkedin.com/in/ekaterina-petukhova/)**
 
 **[instagram](https://www.instagram.com/sadkote/)**
+
+## 🎓 education
+
+### belarussian state university, minsk
+
+faculty of chemistry 
+
+*2018 — 2021 (incomplete)*
+
+### academy of silesia, katowice
+
+faculty of computer science
+
+*2021 — now*
+
+## 💼 career history
+
+### front-end developer intern, agileo.it
+
+*jun — sep 2022, katowice*
+
+* created and developed interface of recruitment website, using html/haml, bootstarp and scss
+
+## 📖 courses 
+
+### «JavaScript/Front-end. Stage 0», The Rolling Scopes
+
+*jun — oct 2023*
+
+### «JavaScript/Front-end», The Rolling Scopes
+
+*nov 2023 — now*
+
