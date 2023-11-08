@@ -13,8 +13,6 @@ body {
 }
 
 body {
-  font-size: 20px;
-  text-transform: lowercase;
 }
 
 a {
@@ -34,12 +32,3 @@ input {
   border: none;
   padding: 0;
 }
-
-[class*="__container"] {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.code__body code {
-  white-space: pre;
