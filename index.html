@@ -258,14 +258,12 @@
             <div class="code__body">
               <code>
                 convert(input, source, target) {
-                const arr = input.split('');
+                const arr = input.split("");
                 let convToTarg = [];
-                
-                let convToDec = arr.reduce((acc, item, index) => {
+                let convToDec = arr.reduce((acc, item, index) =&gt {
                   acc += source.indexOf(item) * Math.pow(source.length, arr.length - 1 - index);
                   return acc;
                 }, 0);
-                
                 if (convToDec === 0) {
                   convToTarg.push(convToDec);
                 } else {
@@ -274,8 +272,7 @@
                   convToDec = Math.floor(convToDec / target.length);
                  }
                 }
-                
-                return convToTarg.reverse().map((item) => target.charAt(item)).join('');
+                return convToTarg.reverse().map((item) =&gt target.charAt(item)).join("");
               }
               </code>
             </div>
