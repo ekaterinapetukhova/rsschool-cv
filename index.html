@@ -256,24 +256,13 @@
           <div class="code__container">
             <h2 class="code__title">code example</h2>
             <div class="code__body">
+              <h5>Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.</h5>
               <code>
-                convert(input, source, target) {
-                const arr = input.split("");
-                let convToTarg = [];
-                let convToDec = arr.reduce((acc, item, index) =&gt {
-                  acc += source.indexOf(item) * Math.pow(source.length, arr.length - 1 - index);
-                  return acc;
-                }, 0);
-                if (convToDec === 0) {
-                  convToTarg.push(convToDec);
-                } else {
-                  while (convToDec !== 0) {
-                  convToTarg.push(convToDec % target.length);
-                  convToDec = Math.floor(convToDec / target.length);
-                 }
+                function moveZeros(arr) {
+                const zeros = arr.filter(item =&gt; item === 0);
+                const notZeros = arr.filter(item =&gt; item !== 0);
+                return notZeros.concat(zeros);
                 }
-                return convToTarg.reverse().map((item) =&gt target.charAt(item)).join("");
-              }
               </code>
             </div>
           </div>
